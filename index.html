@@ -1,0 +1,145 @@
+<header class="header">
+    <div class="container">
+      <h1 class="site-title">Saúde e Vida</h1>
+    <span class="site-tagline">Bem-vindo ao Seu Guia de Saúde e Cuidados Pessoais</span>
+  </div>
+
+  <!-- <link rel="imcstylesheet" href="css/imcstylesheet.css"> -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+</header>
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li class="mobile-button"><a href="#">Menu</a></li>
+    <li><a href="#">Alimentação</a></li>
+    <li><a href="#">Exercícios</a></li>
+    <li><a href="#">Saúde Mental</a></li>
+    <li><a href="#">Cotidiano</a></li>
+    <li><a href="#">Conheça seu IMC</a></li>
+  </ul>
+  </div>
+</nav>
+
+<section class="content">
+  <div class="full-bleed cool-photo"></div>
+
+  <article class="post">
+    <div class="container">
+        <h2>Bem estar para todos os dias!</h2>
+      <div class="columns">
+        <div class="item">
+          <h4 class="item-title">Cuidar da saúde é cuidar do mundo</h4>
+          <img src="img/world.jpg" alt="Planeta abraçando um coração e usando estetoscopio" class="item-image" />
+          <p>A saúde é o nosso bem mais precioso. Cuidar do corpo e da mente é essencial para viver com qualidade de vida. Neste site, você encontrará dicas e informações sobre como adotar hábitos saudáveis, cuidar da sua alimentação, manter-se fisicamente ativo e promover o equilíbrio mental. Explore nossas seções e comece agora a transformar sua rotina!</p> </div>
+
+        <div class="item">
+          <h4 class="item-title">Alimentação Balanceada: O Caminho para uma Vida Saudável</h4>
+          <img src="img/eatwell.jpg" alt="Pessoa se alimenta de frutas" class="item-image" />
+          <p>Uma alimentação equilibrada é fundamental para manter o corpo em bom funcionamento. Inclua em sua dieta uma variedade de alimentos ricos em nutrientes, como frutas, legumes, grãos integrais, proteínas magras e gorduras saudáveis. Evite alimentos ultraprocessados e ricos em açúcar. Aqui estão algumas dicas para você manter uma alimentação saudável:</p>
+          <ul>
+            <li>Consuma mais fibras</li>
+            <li>Reduza a ingestão de sal e açúcares</li>
+            <li>Beba bastante água</li>
+            <li>Faça refeições em horários regulares</li>
+          </ul>
+         </div>
+      </div>
+    </div>   
+  </article>  
+
+  <div class="full-bleed cool-photo2"></div>
+  
+  <article class="post"> 
+    <div class="container">
+    
+    <h3>Tente somar estas práticas no seu cotidiano</h3>
+    
+    <div class="columns thirds">
+      <div class="item"> <h4 class="item-title">Cuide da Sua Saúde Mental</h4>
+          <img src="img/mindfullness.jpg" alt="Sample Image" class="item-image" />
+        <p>A saúde mental é tão importante quanto a física. O equilíbrio emocional impacta todas as áreas da vida, e práticas como meditação, respiração profunda e momentos de lazer são fundamentais para o bem-estar. Aqui estão algumas práticas recomendadas para cuidar da sua saúde mental</p>  
+        <ul>
+            <li>Meditação e mindfulness: <br> Ajuda a acalmar a mente e aumentar o foco.</li>
+            <li>Gerenciamento de estresse: <br> Técnicas como a respiração profunda podem reduzir os níveis de estresse.</li>
+            <li>Manter uma rede de apoio: <br> Conversar com amigos e familiares ajuda a fortalecer a saúde emocional.</li>
+                       
+          </ul>
+          
+          
+        </div>
+        
+        <div class="item">
+            
+            <img  src="img/button-100.jpg" alt="botão imc" class="item-image" />
+            
+            
+                
+                    
+                </br>
+                <form onsubmit="calculaImc(event)"></br>
+                                        <label for="imcPeso" class='imcTitulo offTela'>Peso em kg</label></br>
+                    <input type="number" name='imcPeso' class='calculadoraImc offTela' placeholder='0,0' step='0.01'
+                    id='imcPeso'>
+                </br>
+                <label for="imcAltura" class='imcTitulo offTela'>Altura em cm</label></br>
+                <input type="number" name='imcAltura' class='calculadoraImc offTela' placeholder='0,0' step='0.01'
+                id='imcAltura'> </br>
+                <label for="imcIdade" class='imcTitulo offTela'>Idade</label></br>
+                <input type="number" name='imcIdade' class='calculadoraImc offTela' placeholder='0' id='imcIdade'></br>
+                
+                <label for="atvfisica" class='imcTitulo offTela'>Nível de atividade física</label></br>
+                
+                <select name="atividadeFisica" class='atividadeFisica' id='imcNivelFisico'>
+                    <option value="sedentario" class='atividadeFisica'>Sedentário</option>
+                    <option value="moderado" class='atividadeFisica'>Moderado</option>
+                    <option value="intenso" class='atividadeFisica'>Intenso</option>
+                </select>
+            </br><input type="submit" class='botaoCalcula' value='Calcular' id='calcular'>
+        </form>
+        
+        <div class='mensagemFinal' id='mensagemFinal'>
+            
+        </div>
+    
+    
+    <div class='enfeite'>
+    </div>
+
+
+
+</div>
+
+<div class="item">
+    
+    <h4 class="item-title">Coloque exercícios físicos no seu dia a dia</h4>
+    <img src="img/exerc.jpg" alt="treine em casa" class="item-image" />
+    <p>Manter-se ativo é um dos pilares de uma vida saudável. Se você é iniciante, comece com atividades leves, como caminhadas e alongamentos. Se já tem experiência, experimente intensificar seus treinos com musculação ou corridas. Aqui estão sugestões de exercícios para diferentes níveis:</p>
+    <ul>
+        <li>Iniciantes: <br> Caminhadas, alongamento, ioga suave
+            .</li>
+        <li>Intermediários: <br> Corrida leve, ciclismo, treinos de resistência.</li>
+        <li>Avançados: <br> Treinamento intervalado de alta intensidade (HIIT), musculação avançada.</li>
+                   
+      </ul>
+    
+</div>
+
+<div class="item">
+    
+    <h4 class="item-title">Construa uma alimentação Saudável:</h4>
+    <p>Uma alimentação equilibrada é fundamental para manter o corpo em bom funcionamento. Inclua em sua dieta uma variedade de alimentos ricos em nutrientes, como frutas, legumes, grãos integrais, proteínas magras e gorduras saudáveis. Evite alimentos ultraprocessados e ricos em açúcar. Aqui estão algumas dicas para você manter uma alimentação saudável</p>
+    
+      </div>
+
+    </div>
+  </div>
+  </article>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p> Cuidar de si é o primeiro passo para transformar o mundo ao seu redor.</p>
+  </div>
+  <script  src="js/script.js"></script>
+  <script  src="js/imcscript.js"></script>
+</footer>

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: rgb(120, 167, 228);
+}
+
+.square {
+  height: auto;
+  padding-bottom: 30px;
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  box-shadow: 2px 2px 6px 2px hwb(0 11% 89% / 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  left: 50%;
+  width: 20%;
+  padding: 50px;
+}
+
+.calculadoraImc {
+  font-family: "Jost", sans-serif;
+  font-size: 19px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 87%;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: #4d63cf;
+}
+
+.square h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  padding-top: auto;
+  color: #4250a0;
+  text-align: center;
+  margin-top: 0px;
+}
+.imcTitulo {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #555188;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+.atividadeFisica {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: rgb(143, 143, 143);
+  font-size: 25px;
+  height: 40px;
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.botaoCalcula {
+  color: white;
+  background-color: #4254ac;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  margin-top: 20px;
+  margin-left: 18px;
+  width: 90%;
+  height: 55px;
+  font-size: 25px;
+  border-radius: 5px;
+  }
+
+.botaoCalcula:hover {
+  background-color: #3b4992;
+}
+
+.mensagemFinal {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 23px;
+  text-align: justify;
+  color: #525252;
+}
